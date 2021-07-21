@@ -1,10 +1,8 @@
+import HomePage from "./HomePage/HomePage";
 
 function App() {
   return (
-    <div className="">
-      Hello world
-      fixed!!!
-    </div>
+      <HomePage></HomePage>
   );
 }
 
