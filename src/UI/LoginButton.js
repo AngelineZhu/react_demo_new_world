@@ -11,7 +11,7 @@ function LoginButton() {
 
 
     return (
-        <button className="flex flex-row items-center space-x-2 text-xs font-light">
+        <button className="min-w-max flex flex-row items-center space-x-2 text-xs font-light">
             <span>{buttonIcon}</span>
             <span>{buttonTitle}</span>
             <span>{buttonImage}</span>

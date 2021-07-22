@@ -32,7 +32,7 @@ function HeaderPopover(props) {
                             focus-visible:ring-opacity-75
                             `}
                         >
-                            <span class="flex flex-row items-center space-x-3 text-xs">
+                            <span class="min-w-max flex flex-row items-center space-x-1 text-xs">
                                 <span>{iconImage}</span>
                                 <span class="font-thin">{thinTitle}</span>
                                 <span class="font-thick">{thickTitle}</span>
