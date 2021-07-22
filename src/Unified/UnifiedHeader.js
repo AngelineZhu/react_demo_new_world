@@ -1,4 +1,7 @@
 import React from 'react';
+import LoginButton from '../UI/LoginButton';
+import HeaderLocation from './HeaderLocation';
+import HeaderOperationTime from './HeaderOperationTime';
 
 function UnifiedHeader() {
     return (
@@ -7,12 +10,16 @@ function UnifiedHeader() {
             <div className="hidden md:flex flex-col">
                 {/* Header Ribbon */}
                 <div className="bg-red-800 text-white text-md">
-                    <div className="flex justify-between px-4 py-1">
+                    <div className="flex justify-between px-28 py-1">
                         <div class="flex space-x-4">
-                            <div>location</div>
-                            <div>Operation Time</div>
+                            {/* location */}
+                            <HeaderLocation/>
+                            {/* Operation Time */}
+                            <HeaderOperationTime />
                         </div>
-                        <div>Login style: normal style</div>
+                        <div className="flex justify-centre">
+                            <LoginButton />
+                        </div>
                     </div>
                 </div>
                 {/* Search Ribbon */}
