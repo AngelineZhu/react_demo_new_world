@@ -44,8 +44,8 @@ function UnifiedHeader() {
             </div>
 
             {/* Small Screen Style */}
-            <div className="flex flex-col md:hidden">
-                <div className="bg-white text-xl text-black">
+            <div className="flex flex-col bg-white md:hidden">
+                <div className="text-xl text-black">
                     <div className="flex justify-between px-4 py-1">
                         <div class="flex items-center space-x-4">
                             <button>

@@ -10,7 +10,6 @@ function HomePage() {
             <UnifiedHeader></UnifiedHeader>
             {/* MainBody */}
             <div className="z-10">
-                <div className="pt-40">
                     <Hero/>
                     <div className="bg-yellow-100">
                         <div class="py-32 text-center">
@@ -27,7 +26,6 @@ function HomePage() {
                             <h2 class="font-extrabold text-4xl">Qucik link Section Area!</h2>
                         </div>
                     </div>
-                </div>
             </div>
             {/* Unified Footer */}
             <UnifiedFooter></UnifiedFooter>
