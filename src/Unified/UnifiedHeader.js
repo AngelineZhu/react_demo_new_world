@@ -2,16 +2,20 @@ import React from 'react';
 import LoginButton from '../UI/LoginButton';
 import SearchBar from '../UI/SearchBar';
 import HeaderLocation from './HeaderLocation';
+import HeaderNav from './HeaderNav';
 import HeaderOperationTime from './HeaderOperationTime';
+
+// to do list
+// header nav folding animation
 
 function UnifiedHeader() {
     return (
-        <div className="">
+        <div className="z-50">
             {/* Medium Screen Style */}
             <div className="hidden md:flex flex-col">
                 {/* Header Ribbon */}
                 <div className="bg-red-800 text-white text-md flex justify-center">
-                    <div className="flex justify-between w-10/12 min-w-max py-1">
+                    <div className="flex justify-between w-10/12 min-w-max py-1 md:w-11/12">
                         <div class="flex space-x-4">
                             {/* location */}
                             <HeaderLocation />
@@ -30,9 +34,9 @@ function UnifiedHeader() {
                     </div>
                 </div>
                 {/* Menu Ribbon */}
-                <div className="bg-gray-100 border-t border-gray-300 shadow-lg text-xl text-red-800">
-                    <div>
-                        Menu Area: normal style
+                <div className="border-t border-gray-300 shadow-lg flex justify-center">
+                    <div className="w-10/12 min-w-max flex md:w-11/12">
+                        <HeaderNav />
                     </div>
                 </div>
             </div>

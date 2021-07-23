@@ -8,8 +8,8 @@ import React from "react";
 function SearchBar() {
     return (
         <div className="flex justify-start">
-            <div className="w-1/4 min-w-max flex justify-start lg:justify-center">
-                <a key="" href="##" className="flex justify-center pr-2">
+            <div className="w-1/4 min-w-max flex justify-start lg:justify-start">
+                <a key="" href="##" className="flex justify-center px-3">
                     <img src="nw-logo.svg" alt="New World Logo" />
                 </a>
             </div>
