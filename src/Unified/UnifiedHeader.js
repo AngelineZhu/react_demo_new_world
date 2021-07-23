@@ -1,5 +1,5 @@
 import React from 'react';
-import LoginButton from '../UI/LoginButton';
+import LoginPopout from '../UI/LoginPopout';
 import MonbileSearchBar from '../UI/MobileSearchBar';
 import SearchBar from '../UI/SearchBar';
 import HeaderLocation from './HeaderLocation';
@@ -24,7 +24,8 @@ function UnifiedHeader() {
                             <HeaderOperationTime />
                         </div>
                         <div className="flex justify-centre">
-                            <LoginButton />
+                            {/* <LoginButton /> */}
+                            <LoginPopout></LoginPopout>                        
                         </div>
                     </div>
                 </div>
