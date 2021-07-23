@@ -8,14 +8,14 @@ import React from "react";
 function SearchBar() {
     return (
         <div className="flex justify-start">
-            <div className="w-1/4 min-w-max flex justify-start lg:justify-start">
+            <div className="flex justify-start w-1/4 min-w-max lg:justify-start">
                 <a key="" href="##" className="flex justify-center px-3">
                     <img src="nw-logo.svg" alt="New World Logo" />
                 </a>
             </div>
-            <div className="w-1/2 flex justify-start lg:justify-center">
+            <div className="w-1/2 flex justify-start py-0 lg:justify-center">
                 <div className="min-w-max flex-shrink-0 ">
-                    <div className="min-w-max px-4 py-2 bg-gray-100 rounded shadow-sm border border-gray-300 flex items-center">
+                    <div className="min-w-max px-4 py-1 bg-gray-100 rounded shadow-sm flex items-center">
                         <div class="select px-3 py-2 rounded shadow-sm border border-gray-300 bg-white ">
                             <select name="" id="" x-model="?" class="text-sm outline-none focus:outline-none bg-transparent">
                                 <option value="all" selected>All</option>

@@ -1,5 +1,6 @@
 import React from 'react';
 import LoginButton from '../UI/LoginButton';
+import MonbileSearchBar from '../UI/MobileSearchBar';
 import SearchBar from '../UI/SearchBar';
 import HeaderLocation from './HeaderLocation';
 import HeaderNav from './HeaderNav';
@@ -45,17 +46,29 @@ function UnifiedHeader() {
             <div className="flex flex-col md:hidden">
                 <div className="bg-white text-xl text-black">
                     <div className="flex justify-between px-4 py-1">
-                        <div class="flex space-x-4">
-                            <div>menu button: mobile style</div>
-                            <div>Logo link: mobile style</div>
+                        <div class="flex items-center space-x-4">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                                </svg>
+                            </button>
+                            <div>
+                                <a key="" href="##" className="flex justify-center px-3">
+                                    <img src="nw-logo-badge.svg" alt="New World Badge" />
+                                </a>
+                            </div>
                         </div>
-                        <div>Login: mobiel style</div>
+                        <div class="flex items-center space-x-4">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div className="bg-gray-100 text-black text-lg">
-                    <div className="bg-gray-100 border-t border-gray-300 shadow-lg text-xl ">
-                        <div>Search Bar</div>
-                    </div>
+                <div className="w-full flex justify-center border-t border-gray-200">
+                    <MonbileSearchBar></MonbileSearchBar>
                 </div>
             </div>
 
