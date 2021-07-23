@@ -11,8 +11,8 @@ import HeaderOperationTime from './HeaderOperationTime';
 
 function UnifiedHeader() {
     return (
-        <div className="z-50">
-            {/* Medium Screen Style */}
+        <div className="w-full z-50 min-w-max fixed">
+            {/* Medium & large Screen or Style */}
             <div className="hidden md:flex flex-col">
                 {/* Header Ribbon */}
                 <div className="bg-red-800 text-white text-md flex justify-center">
@@ -36,7 +36,7 @@ function UnifiedHeader() {
                     </div>
                 </div>
                 {/* Menu Ribbon */}
-                <div className="border-t border-gray-300 shadow-lg flex justify-center">
+                <div className="bg-white border-t border-gray-300 shadow-lg flex justify-center">
                     <div className="w-10/12 min-w-max flex md:w-11/12">
                         <HeaderNav />
                     </div>
@@ -70,12 +70,6 @@ function UnifiedHeader() {
                 </div>
                 <div className="w-full flex justify-center border-t border-gray-200">
                     <MonbileSearchBar></MonbileSearchBar>
-                </div>
-            </div>
-
-            <div className="flex flex-col md:hidden">
-                <div>
-                    Menu Area: mobile Style
                 </div>
             </div>
         </div>
