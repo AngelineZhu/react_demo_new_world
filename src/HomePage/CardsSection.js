@@ -1,5 +1,6 @@
 import React from 'react';
-import ZoomInCard from '../UI/ZoomInCard';
+import EqualCard from '../UI/EqualCard';
+import UnequalCard from '../UI/UnequalCard';
 
 function CardsSection() {
 
@@ -36,13 +37,35 @@ function CardsSection() {
     return (
         <div>
             {/* 3 ads section */}
-            <div className="relative bg-white flex justify-center">
+            <div className="hidden md:flex relative bg-white justify-center">
                 <div className="absolute top-0 w-full h-64 bg-yellow-50">
                 </div>
                 <div className="relative z-30 w-11/12 py-12 flex justify-center space-x-12">
-                    <ZoomInCard title={ads3_1.title} image={ads3_1.image} description={ads3_1.description} />
-                    <ZoomInCard title={ads3_2.title} image={ads3_2.image} description={ads3_2.description} />
-                    <ZoomInCard title={ads3_3.title} image={ads3_3.image} description={ads3_3.description} />
+                    <EqualCard title={ads3_1.title} image={ads3_1.image} description={ads3_1.description} />
+                    <EqualCard title={ads3_2.title} image={ads3_2.image} description={ads3_2.description} />
+                    <EqualCard title={ads3_3.title} image={ads3_3.image} description={ads3_3.description} />
+                </div>
+            </div>
+
+            <div className="flex relative bg-white text-black justify-center md:hidden">
+                <div className="absolute top-0 w-full h-96 bg-yellow-50">
+                </div>
+                <div className="relative overflow-x-auto flex flex-row items-start space-x-2 p-4">
+                    <div className="">
+                        <div class="w-96 px-2 py-2">
+                            <EqualCard title={ads3_1.title} image={ads3_1.image} description={ads3_1.description} />
+                        </div>
+                    </div>
+                    <div className="">
+                        <div class="w-96 px-2 py-2">
+                            <EqualCard title={ads3_2.title} image={ads3_2.image} description={ads3_2.description} />
+                        </div>
+                    </div>
+                    <div className="">
+                        <div class="w-96 px-2 py-2">
+                            <EqualCard title={ads3_3.title} image={ads3_3.image} description={ads3_3.description} />
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -50,22 +73,29 @@ function CardsSection() {
             <div className="bg-gray-800 text-white flex justify-center py-10">
                 <div className="w-11/12 flex flex-col flex-evenly">
                     <div className="flex justify-center">
-                        <div className="w-9/12 text-center py-5 space-y-4">
-                            <h2 className="font-extrabold text-3xl">{headTitle}</h2>
+                        <div className="w-full text-center py-5 space-y-4 md:w-9/12">
+                            <h2 className="font-extrabold text-2xl">{headTitle}</h2>
                             <p className="font-light text-lg">{headDescription}</p>
                         </div>
                     </div>
-                    <div className="w-full flex justify-center space-x-12">
+                    {/* Large & medium Screen */}
+                    <div className="hidden md:flex w-full justify-center space-x-12">
                         <div className="w-2/3">
-                            <ZoomInCard title={ads2_1.title} image={ads2_1.image} description={ads2_1.description} />
+                            <UnequalCard title={ads2_1.title} image={ads2_1.image} description={ads2_1.description} />
                         </div>
                         <div className="w-1/3">
-                            <ZoomInCard title={ads2_2.title} image={ads2_2.image} description={ads2_2.description} />
+                            <UnequalCard title={ads2_2.title} image={ads2_2.image} description={ads2_2.description} />
                         </div>
+                    </div>
+
+                    {/* Small Screen */}
+                    <div className="flex flex-col w-full justify-evenly space-y-5 md:hidden">
+                        <UnequalCard title={ads2_1.title} image={ads2_1.image} description={ads2_1.description} />
+                        <UnequalCard title={ads2_2.title} image={ads2_2.image} description={ads2_2.description} />
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
 
     );
 }
