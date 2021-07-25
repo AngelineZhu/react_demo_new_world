@@ -3,6 +3,9 @@ import UnifiedFooter from '../Unified/UnifiedFooter';
 import UnifiedHeader from '../Unified/UnifiedHeader';
 import Hero from '../UI/Hero';
 import CardsSection from './CardsSection';
+import QuickLink from './QiuckLink';
+import QuickOrder from './QuickOrder';
+import WeekDeals from './WeekDeals';
 
 function HomePage() {
     return (
@@ -12,17 +15,10 @@ function HomePage() {
             {/* MainBody */}
             <div className="z-20">
                 <Hero />
-                <div className="bg-yellow-100">
-                    <div class="py-32 text-center">
-                        <h2 class="font-extrabold text-4xl">Quick Link Section Area!</h2>
-                    </div>
-                </div>
+                <QuickLink />
                 <CardsSection />
-                <div className="bg-yellow-100">
-                    <div className="py-32 text-center">
-                        <h2 className="font-extrabold text-4xl">Qucik link Section Area!</h2>
-                    </div>
-                </div>
+                <WeekDeals />
+                <QuickOrder />
             </div>
             {/* Unified Footer */}
             <UnifiedFooter></UnifiedFooter>
