@@ -35,9 +35,9 @@ function Hero() {
             {/* small & medium screen */}
             <div className="w-full pt-28 flex md:hidden">
                 <div className="w-full flex flex-col justify-center">
-                    <div className="flex w-full bg-right bg-cover h-80" style={{ backgroundImage: `url('./large-hero-anika-secret-3.jpeg')` }}>
+                    <div className="flex w-full bg-right bg-cover h-80" style={{ backgroundImage: `url('./large-hero-anika-secret-3.jpeg')`}}>
                     </div>
-                    <div className="flex -mt-20 items-center justify-center w-full h-full">
+                    <div className="flex -mt-20 items-center justify-center w-full h-auto">
                         <div className="w-11/12 flex flex-col space-y-5 items-center text-center bg-white py-3 px-5">
                             <span className="text-4xl font-black">
                                 <p>
