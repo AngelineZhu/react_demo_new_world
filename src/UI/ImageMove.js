@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from 'react';
 
-function ImageTest() {
+function ImageMove() {
 
     const item1 = {
         title: "Image-1",
@@ -72,6 +72,7 @@ function ImageTest() {
             </div>
         </div>
     );
+    
 };
 
-export default ImageTest;
+export default ImageMove;

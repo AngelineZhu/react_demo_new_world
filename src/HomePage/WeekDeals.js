@@ -9,7 +9,6 @@ function WeekDeals() {
             </div>
 
             <ImageMove />
-
         </div>
     )
 }
