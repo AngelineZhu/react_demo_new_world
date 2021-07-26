@@ -13,7 +13,7 @@ function HomePage() {
             {/* Unified Header */}
             <UnifiedHeader></UnifiedHeader>
             {/* MainBody */}
-            <div className="z-20">
+            <div className="z-20 flex flex-col justfy-items-center">
                 <Hero />
                 <QuickLink />
                 <CardsSection />
