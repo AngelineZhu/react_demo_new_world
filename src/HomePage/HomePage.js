@@ -6,6 +6,7 @@ import CardsSection from './CardsSection';
 import QuickLink from './QiuckLink';
 import QuickOrder from './QuickOrder';
 import WeekDeals from './WeekDeals';
+import ImageCarousel from '../UI/ImageCarousel';
 
 function HomePage() {
     return (
@@ -19,6 +20,7 @@ function HomePage() {
                 <CardsSection />
                 <WeekDeals />
                 <QuickOrder />
+                <ImageCarousel/>
             </div>
             {/* Unified Footer */}
             <UnifiedFooter></UnifiedFooter>
