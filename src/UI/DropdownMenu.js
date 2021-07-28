@@ -31,9 +31,9 @@ function DropdownMenu(props) {
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
                 >
-                    <Menu.Items className="absolute left-0 w-60 h-auto max-h-60 origin-top-righ bg-opacity-100 rounded-sm shadow-lg overflow-scroll focus:outline-none">
+                    <Menu.Items className="absolute left-0 w-60 h-auto max-h-60 origin-top-righ bg-gray-200 rounded-sm shadow-inner overflow-scroll focus:outline-none">
                         <div className="p-5">
-                            <div className="p-3 border border-gray-100 bg-gray-50 rounded-md divide-y divide-gray-100">
+                            <div className="p-3 border border-gray-300 bg-gray-50 rounded-md divide-y divide-gray-300">
                                 <menuItem className="text-sm font-medium text-gray-900">
                                     <div>
                                         <a key={menuItem.title} href={menuItem.href}

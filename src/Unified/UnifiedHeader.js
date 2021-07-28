@@ -5,6 +5,7 @@ import SearchBar from '../UI/SearchBar';
 import HeaderLocation from './HeaderLocation';
 import HeaderNav from './HeaderNav';
 import HeaderOperationTime from './HeaderOperationTime';
+import NavDrop from '../UI/NavDrop';
 
 // to do list
 // header nav folding animation
@@ -48,11 +49,7 @@ function UnifiedHeader() {
                 <div className="text-xl text-black">
                     <div className="flex justify-between px-4 py-1">
                         <div class="flex items-center space-x-4">
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
-                                </svg>
-                            </button>
+                            <NavDrop />
                             <div>
                                 <a key="" href="##" className="flex justify-center px-3">
                                     <img src="nw-logo-badge.svg" alt="New World Badge" />

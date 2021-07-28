@@ -31,13 +31,14 @@ function HeaderNav() {
                 </li>
                 <li><DiscoverMenu></DiscoverMenu></li>
                 <li><WhoweareMenu></WhoweareMenu></li>
-                <li><a key="" href="##" className="inline-flex justify-center w-full px-4 py-4 text-sm font-medium text-black hover:bg-gray-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-                    Mailer
-                    <ChevronDownIcon
-                        className="w-5 h-5 ml-2 -mr-1 text-violet-200 hover:text-violet-100" stroke="#700aa3"
-                        aria-hidden="true"
-                    />
-                </a>
+                <li>
+                    <a key="" href="##" className="inline-flex justify-center w-full px-4 py-4 text-sm font-medium text-black hover:bg-gray-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+                        Mailer
+                        <ChevronDownIcon
+                            className="w-5 h-5 ml-2 -mr-1 text-violet-200 hover:text-violet-100" stroke="#700aa3"
+                            aria-hidden="true"
+                        />
+                    </a>
                 </li>
             </ul>
         </nav>
